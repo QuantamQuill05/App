@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.intro {
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeInOut 4s;
+}
+
+#intro2 {
+    animation-delay: 4s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#content {
+    animation: fadeIn 1s forwards;
+    animation-delay: 8s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, section {
+    margin: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 10px;
+}
+
+.rules ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .rules ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    .rules ul {
+        padding-left: 10px;
+    }
+}
